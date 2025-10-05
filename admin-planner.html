@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>CoachBot Admin — План</title>
+  <link rel="stylesheet" href="assets/css/app.css"/>
+</head>
+<body>
+  
+<header class="app-bar">
+  <div class="app-bar__left">
+    <a class="brand" href="index.html">CoachBot Admin</a>
+  </div>
+  <div class="app-bar__right">
+    <button id="themeToggle" class="icon-btn" title="Theme">🌙</button>
+    <button id="menuToggle" class="icon-btn" title="Menu">≡</button>
+  </div>
+</header>
+<nav id="sideMenu" class="side-menu">
+  <ul class="menu-list">
+    <li><a href="index.html">Клиенты</a></li>
+    <li><a href="admin-planner.html">Составить план</a></li>
+    <li><a href="admin-report-unified.html">Отчёт</a></li>
+    <li><a href="admin-exercises.html">Библиотека упражнений</a></li>
+    <li><a href="admin-settings.html">Настройки</a></li>
+  </ul>
+</nav>
+<div id="scrim" class="scrim"></div>
+
+  <main class="container">
+    
+<section class="v-stack">
+  <div class="card v-stack">
+    <h2>Составить план</h2>
+    <div class="grid grid-2">
+      <div class="v-stack">
+        <label>Дата тренировки</label>
+        <input type="date"/>
+      </div>
+      <div class="v-stack">
+        <label>Взять за основу (предыдущая дата)</label>
+        <input type="date" />
+        <div class="h-stack"><button class="btn">Взять за основу</button><span class="chip">Копирует упражнения/темпо/подходы и цели</span></div>
+      </div>
+    </div>
+    <div class="h-stack" style="justify-content:flex-end">
+      <div class="chip"><strong>Тоннаж:</strong> 0 кг</div>
+    </div>
+  </div>
+
+  <div class="card v-stack">
+    <h3>Добавить упражнение</h3>
+    <div class="grid grid-2">
+      <div><select><option>Выберите…</option><option>Сгибание ног сидя</option><option>Сведение ног сидя</option></select></div>
+      <div><button class="btn btn-primary">Добавить</button></div>
+    </div>
+  </div>
+
+  <div class="card v-stack">
+    <h3>Сгибание ног сидя <span class="chip">Темпо 1-0-2-0</span></h3>
+    <div class="h-stack" style="flex-wrap:wrap; gap:10px">
+      <div class="chip">1. 60×12 <strong>7.5</strong></div>
+      <div class="chip">2. 80×12 <strong>10.0</strong></div>
+      <div class="chip">3. 80×12 <strong>10.0</strong></div>
+      <div class="chip">4. 80×12 <strong>10.0</strong></div>
+    </div>
+    <div class="grid grid-3">
+      <div class="v-stack"><label>Подходов</label><input value="4"/></div>
+      <div class="v-stack"><label>Вес, кг (через запятую)</label><input placeholder="60,80,80,80"/></div>
+      <div class="v-stack"><label>Повторы (через запятую)</label><input placeholder="12,12,12,12"/></div>
+    </div>
+  </div>
+
+  <div class="h-stack" style="justify-content:space-between;">
+    <button class="btn">Сохранить как черновик</button>
+    <button class="btn btn-primary">Назначить план</button>
+  </div>
+</section>
+
+    <div class="spacer"></div>
+  </main>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>CoachBot Admin — Отчёт</title>
+  <link rel="stylesheet" href="assets/css/app.css"/>
+</head>
+<body>
+  
+<header class="app-bar">
+  <div class="app-bar__left">
+    <a class="brand" href="index.html">CoachBot Admin</a>
+  </div>
+  <div class="app-bar__right">
+    <button id="themeToggle" class="icon-btn" title="Theme">🌙</button>
+    <button id="menuToggle" class="icon-btn" title="Menu">≡</button>
+  </div>
+</header>
+<nav id="sideMenu" class="side-menu">
+  <ul class="menu-list">
+    <li><a href="index.html">Клиенты</a></li>
+    <li><a href="admin-planner.html">Составить план</a></li>
+    <li><a href="admin-report-unified.html">Отчёт</a></li>
+    <li><a href="admin-exercises.html">Библиотека упражнений</a></li>
+    <li><a href="admin-settings.html">Настройки</a></li>
+  </ul>
+</nav>
+<div id="scrim" class="scrim"></div>
+
+  <main class="container">
+    
+<section class="v-stack">
+  <div class="grid grid-3">
+    <div class="kpi"><div class="muted">Выполнено подходов</div><div class="num">6</div></div>
+    <div class="kpi"><div class="muted">Тоннаж (кг)</div><div class="num">4740</div></div>
+    <div class="kpi"><div class="muted">Средний RPE</div><div class="num">8.75</div></div>
+  </div>
+
+  <div class="card v-stack">
+    <div class="h-stack" style="justify-content:space-between;">
+      <h3>Сгибание ног сидя</h3>
+      <span class="muted">Темпо: 1-0-2-0</span>
+    </div>
+    <div class="h-stack" style="flex-wrap:wrap; gap:10px">
+      <div class="chip">1. 60×12 <strong>7.5</strong></div>
+      <div class="chip">2. 80×12 <strong>10.0</strong></div>
+      <div class="chip">3. 80×12 <strong>10.0</strong></div>
+      <div class="chip">4. 80×12 <strong>10.0</strong></div>
+    </div>
+    <div class="grid grid-3">
+      <div class="kpi"><div class="muted">RPE ср.</div><div class="num">9.38</div></div>
+      <div class="kpi"><div class="muted">Видео</div><div class="num">—</div></div>
+      <div class="kpi"><div class="muted">Статус</div><div class="num">😤 жёстко</div></div>
+    </div>
+    <div class="v-stack">
+      <label>Комментарий</label>
+      <textarea rows="2" placeholder="Последний подход был на грани"></textarea>
+    </div>
+  </div>
+
+  <div class="card v-stack">
+    <div class="h-stack" style="justify-content:space-between;">
+      <h3>Сведение ног сидя</h3>
+      <span class="muted">Темпо: 2-0-1-0</span>
+    </div>
+    <div class="h-stack" style="flex-wrap:wrap; gap:10px">
+      <div class="chip">1. 45×12 <strong>7.5</strong></div>
+      <div class="chip">2. 50×12 <strong>7.5</strong></div>
+    </div>
+    <div class="grid grid-3">
+      <div class="kpi"><div class="muted">RPE ср.</div><div class="num">7.50</div></div>
+      <div class="kpi"><div class="muted">Видео</div><div class="num"><a href="#">Смотреть</a></div></div>
+      <div class="kpi"><div class="muted">Статус</div><div class="num">✅ норм</div></div>
+    </div>
+    <div class="v-stack">
+      <label>Комментарий</label>
+      <textarea rows="2" placeholder="Тягивитость норм, расширение хорошее"></textarea>
+    </div>
+  </div>
+</section>
+
+    <div class="spacer"></div>
+  </main>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
